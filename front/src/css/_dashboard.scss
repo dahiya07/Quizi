@@ -1,0 +1,85 @@
+.Dashboard{
+    margin: auto;
+    text-align: center;
+    margin-top: 5em;
+    width: 65%;
+    height: max-content;
+    padding-bottom: 40px;
+    background-color: rgba(273,273,273,0.8);
+    .profile-name{
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+        padding: 20px;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    .YourScore{
+        font-size: 1.3em;
+        color: darkred;
+        font-weight: bold;
+        .quiz-container{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin: 20px;
+            .QuizList{
+                border: 2px solid black;
+                box-shadow: 8px 7px 10px 6px grey;
+                height: max-content;
+                background-color: rgba(0,0,0,0.8);
+                border-radius: 0px 30px;
+                .quiz-image{
+                    border-top: 2px solid white;
+                    border-bottom: 2px solid white;
+                    img{
+                        width: 12em;
+                    }
+                }
+                .q-title, .quiz-score{
+                    color: white;
+                    padding: 15px;
+                    h4 , h5{
+                        margin: 0px;
+                    }
+                }
+            }
+        }
+        .nav-link{
+            margin: 20px;
+            text-decoration: none;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border-radius: 20px 20px;
+            box-shadow: 2px 2px 2px 2px grey;
+            font-weight: 500;
+            &:hover{
+                background-color: indianred;
+                box-shadow: -2px 3px 2px 2px grey;
+            }
+        }
+    }
+}
+
+@media(max-width:600px){
+    .Dashboard{
+        .profile-name{
+            font-size: 1em;
+            padding: 10px;
+            font-weight: 300;
+        }
+        .YourScore{
+            font-size: 1em;
+            .quiz-container{
+                .QuizList{
+                    margin: 10px;
+                    .quiz-image{
+                        img{
+                            width: 8em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

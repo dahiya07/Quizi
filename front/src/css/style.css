@@ -1,0 +1,462 @@
+.container1 {
+  position: relative;
+  width: 100%;
+  min-height: 99vh;
+  padding: 10px;
+}
+
+.container1 .body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  margin: auto;
+  margin-top: 40px;
+  min-height: 84vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  background-color: white;
+}
+
+.container1 .body .form {
+  width: 60%;
+  padding: 200px 60px 90px 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container1 .body .form h2 {
+  width: 100%;
+  color: #666666;
+  text-align: center;
+}
+
+.container1 .body .form .form-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container1 .body .form .form-cont .form-group {
+  width: 60%;
+  margin-bottom: 20px;
+  margin: 10px;
+}
+
+.container1 .body .form .form-cont .form-group input {
+  display: block;
+  width: 100%;
+  background: transparent;
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.2;
+  height: 55px;
+  outline: none;
+  border: 1px solid #e6e6e6;
+}
+
+.container1 .body .form .form-cont .form-group .invalid-feedback {
+  color: red;
+  font-weight: bold;
+}
+
+.container1 .body .form .form-cont .form-group .avail {
+  color: green;
+  font-weight: bold;
+}
+
+.container1 .body .form .submit-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container1 .body .form .submit-btn button {
+  outline: none !important;
+  border: none;
+}
+
+.container1 .body .form .submit-btn .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  border-radius: 3px;
+  background: #00ad5f;
+  font-size: 12px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.container1 .body .form .submit-btn .btn:hover {
+  background-color: #666666;
+  cursor: pointer;
+}
+
+.container1 .body .form .text-center {
+  text-align: center;
+  width: 100%;
+}
+
+.container1 .body .form .text-center .d-block {
+  margin: 0px 10px;
+  text-decoration: none;
+  font-size: 0.95em;
+  color: #00ad5f;
+  line-height: 1.5;
+}
+
+.container1 .body .form .text-center .d-block:hover {
+  color: #666666;
+}
+
+.container1 .body .image {
+  background-image: url(../assest/bg-01.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+}
+
+@media (max-width: 700px) {
+  .container1 .body .image {
+    display: none;
+  }
+  .container1 .body .form {
+    width: 100%;
+    padding: 118px 10px 65px 5px;
+  }
+}
+
+.Dashboard {
+  margin: auto;
+  text-align: center;
+  margin-top: 5em;
+  width: 65%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-bottom: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.Dashboard .profile-name {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.Dashboard .YourScore {
+  font-size: 1.3em;
+  color: darkred;
+  font-weight: bold;
+}
+
+.Dashboard .YourScore .quiz-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px;
+}
+
+.Dashboard .YourScore .quiz-container .QuizList {
+  border: 2px solid black;
+  -webkit-box-shadow: 8px 7px 10px 6px grey;
+          box-shadow: 8px 7px 10px 6px grey;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 0px 30px;
+}
+
+.Dashboard .YourScore .quiz-container .QuizList .quiz-image {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.Dashboard .YourScore .quiz-container .QuizList .quiz-image img {
+  width: 12em;
+}
+
+.Dashboard .YourScore .quiz-container .QuizList .q-title, .Dashboard .YourScore .quiz-container .QuizList .quiz-score {
+  color: white;
+  padding: 15px;
+}
+
+.Dashboard .YourScore .quiz-container .QuizList .q-title h4, .Dashboard .YourScore .quiz-container .QuizList .q-title h5, .Dashboard .YourScore .quiz-container .QuizList .quiz-score h4, .Dashboard .YourScore .quiz-container .QuizList .quiz-score h5 {
+  margin: 0px;
+}
+
+.Dashboard .YourScore .nav-link {
+  margin: 20px;
+  text-decoration: none;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border-radius: 20px 20px;
+  -webkit-box-shadow: 2px 2px 2px 2px grey;
+          box-shadow: 2px 2px 2px 2px grey;
+  font-weight: 500;
+}
+
+.Dashboard .YourScore .nav-link:hover {
+  background-color: indianred;
+  -webkit-box-shadow: -2px 3px 2px 2px grey;
+          box-shadow: -2px 3px 2px 2px grey;
+}
+
+@media (max-width: 600px) {
+  .Dashboard .profile-name {
+    font-size: 1em;
+    padding: 10px;
+    font-weight: 300;
+  }
+  .Dashboard .YourScore {
+    font-size: 1em;
+  }
+  .Dashboard .YourScore .quiz-container .QuizList {
+    margin: 10px;
+  }
+  .Dashboard .YourScore .quiz-container .QuizList .quiz-image img {
+    width: 8em;
+  }
+}
+
+.Quiz-cont {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  margin-top: 5em;
+  width: 65%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.Quiz-cont .profile-name {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.Quiz-cont .Quizes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px;
+}
+
+.Quiz-cont .Quizes .QuizName {
+  border: 2px solid black;
+  -webkit-box-shadow: 8px 7px 10px 6px grey;
+          box-shadow: 8px 7px 10px 6px grey;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 0px 30px;
+  margin: 10px;
+}
+
+.Quiz-cont .Quizes .QuizName .quiz-image {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.Quiz-cont .Quizes .QuizName .quiz-image img {
+  width: 15em;
+  -webkit-transition: 1s all ease-in-out;
+  transition: 1s all ease-in-out;
+}
+
+.Quiz-cont .Quizes .QuizName .instruction, .Quiz-cont .Quizes .QuizName .title {
+  color: white;
+  padding: 15px;
+  -webkit-transition: 0.7s all ease-in-out;
+  transition: 0.7s all ease-in-out;
+}
+
+.Quiz-cont .Quizes .QuizName:hover {
+  -webkit-box-shadow: -1px 4px 23px 4px chocolate;
+          box-shadow: -1px 4px 23px 4px chocolate;
+  height: 17em;
+}
+
+.Quiz-cont .Quizes .QuizName:hover .quiz-image img {
+  width: 16.5em;
+}
+
+.Quiz-cont .Quizes .QuizName:hover .title {
+  font-size: 1.5em;
+}
+
+.Quiz-cont .questionlist .que-cont .questions {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.Quiz-cont .questionlist .que-cont form {
+  text-align: left;
+  padding: 10px;
+}
+
+.Quiz-cont .questionlist .que-cont form label {
+  font-size: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.Quiz-cont .questionlist .que-cont form label .check {
+  display: inline-block;
+  background-color: #ddd;
+  padding: 10px 20px;
+  font-family: sans-serif, Arial;
+  font-size: 16px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  width: 90%;
+  margin-left: 10px;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.Quiz-cont .questionlist .que-cont form label input {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.Quiz-cont .questionlist .que-cont form label input[type="radio"]:checked + .check {
+  background-color: #bfb;
+  border-color: #4c4;
+}
+
+.Quiz-cont .questionlist .que-cont form label input[type="radio"]:focus + .check {
+  border: 2px dashed #444;
+}
+
+.Quiz-cont .questionlist .que-cont .next {
+  width: 70%;
+  background-color: #00ad5f;
+  padding: 17px;
+  color: white;
+  border: none;
+  -webkit-box-shadow: -2px 3px 11px 0px black;
+          box-shadow: -2px 3px 11px 0px black;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.Quiz-cont .questionlist .que-cont .next:hover {
+  background-color: indianred;
+  cursor: pointer;
+}
+
+.Quiz-cont .result-cont .Completed {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+}
+
+.Quiz-cont .result-cont .result {
+  font-size: 2em;
+  color: green;
+  min-height: 2em;
+}
+
+.Quiz-cont .result-cont .Next {
+  width: 70%;
+  background-color: #00ad5f;
+  padding: 17px;
+  color: white;
+  text-decoration: none;
+  -webkit-box-shadow: -2px 3px 11px 0px black;
+          box-shadow: -2px 3px 11px 0px black;
+}
+
+.Quiz-cont .result-cont .Next:hover {
+  background-color: indianred;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .Quiz-cont .profile-name {
+    font-size: 1em;
+    padding: 10px;
+    font-weight: 300;
+  }
+  .Quiz-cont .Quizes {
+    font-size: 1em;
+  }
+  .Quiz-cont .Quizes .QuizName .quiz-image img {
+    width: 8em;
+  }
+}
+
+.App {
+  background-image: url(../assest/bg-01.jpg);
+  background-size: cover;
+  min-height: 650px;
+}
+
+.logout {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 13px;
+  border-radius: 20px;
+}
+/*# sourceMappingURL=style.css.map */

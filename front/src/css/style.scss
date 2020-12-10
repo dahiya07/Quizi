@@ -1,0 +1,19 @@
+@import"login";
+@import"dashboard";
+@import"quizlist";
+
+.App{
+    background-image: url(../assest/bg-01.jpg);
+    background-size: cover;
+    min-height: 650px;
+}
+.logout{
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    padding: 13px;
+    border-radius: 20px;
+}

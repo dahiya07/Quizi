@@ -1,0 +1,123 @@
+.container1{
+    position: relative;
+    width: 100%;
+    min-height: 99vh;
+    //margin: 0 auto;
+    padding: 10px;
+    .body{
+        display: flex;
+        width: 70%;
+        margin: auto;
+        margin-top: 40px;
+        min-height:84vh ;
+        flex-direction: row-reverse;
+        background-color: white;
+        .form{
+            width: 60%;
+            padding: 200px 60px 90px 43px;
+            display: flex;
+            transition: all 1s;
+            flex-wrap: wrap;
+            h2{
+                width: 100%;
+                color: #666666;
+                text-align: center;
+            }
+            .form-cont{
+                display: flex;
+                justify-content: space-evenly;
+                width:100%;
+                flex-wrap: wrap;
+                .form-group{
+                    width: 60%;
+                    margin-bottom:20px;
+                    margin: 10px;
+                    input{
+                        display: block;
+                        width: 100%;
+                        background: transparent;
+                        font-size: 16px;
+                        color: #666666;
+                        line-height: 1.2;
+                        height: 55px;
+                        outline: none;
+                        border: 1px solid #e6e6e6;
+                    }
+                    .invalid-feedback{
+                        color: red;
+                        font-weight: bold;
+                    }
+                    .avail{
+                        color:green;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .submit-btn{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                button{
+                    outline: none !important;
+                    border: none;
+                }
+                .btn{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 20px;
+                    width: 100%;
+                    height: 50px;
+                    border-radius: 3px;
+                    background: #00ad5f;
+                    font-size: 12px;
+                    color: #fff;
+                    line-height: 1.2;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    transition: all 0.4s;
+                    &:hover{
+                        background-color: #666666;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .text-center{
+                text-align: center;
+                width: 100%;
+                .d-block{
+                    margin:0px 10px ;
+                    text-decoration: none;
+                    font-size: 0.95em;
+                    color: #00ad5f;
+                    line-height: 1.5;
+                    &:hover{
+                        color: #666666;
+                    }
+                }
+            }
+        }
+        .image{
+            background-image: url(../assest/bg-01.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 50%;
+        }
+    }
+}
+
+@media(max-width:700px)
+{
+    .container1{
+        .body{
+            .image{
+                display: none;
+            }
+            .form{
+                width: 100%;
+                padding: 118px 10px 65px 5px;
+            }
+        }
+    }
+}
