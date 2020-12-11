@@ -1,5 +1,5 @@
 # Quizi
-## A Node + React Quiz App using sequlaize nodejs
+## A Node + React Quiz App using sequalize nodejs
 
 Clone my repository
 
