@@ -3,7 +3,7 @@
 
 Clone my repository
 
-goto to terminal and to Quizi directory , in command line write
+go to terminal and to Quizi directory , in command line write
 ```
 npm re-install
 ```
